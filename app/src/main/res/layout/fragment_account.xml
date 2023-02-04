@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment"
+    android:background="#3d3b4a">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/profileImage"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/layout_bg6"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/profileImage"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ashen"
+        android:textColor="@color/white"
+        android:id="@+id/profileName"
+        android:textSize="25dp"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="150dp"
+        android:layout_below="@id/profileName"
+        android:id="@+id/pembatas1"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_bg5"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Profile Details: "
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/pembatas1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:id="@+id/profileEmail"/>
+
+    <LinearLayout
+        android:layout_marginLeft="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/profileEmail"
+        android:id="@+id/pembatas2"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_bg8"
+        android:layout_height="20dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_gravity="end"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="History: "
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:id="@+id/historyContainer"
+        android:layout_below="@id/pembatas2"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/logoutBtn"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg"
+        android:text="LOGOUT"/>
+
+</RelativeLayout>

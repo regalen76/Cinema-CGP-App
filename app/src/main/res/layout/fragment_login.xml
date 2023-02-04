@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment"
+        android:background="#3d3b4a">
+
+    <TextView
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/rizztext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:text="Enjoy easily \nwatching with \nCINEMA CGP"/>
+    <TextView
+        android:layout_marginLeft="250dp"
+        android:layout_below="@id/rizztext1"
+        android:id="@+id/rizztext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join US \nNow!!!!!!\nIts Free"
+        android:textSize="30dp"
+        android:textColor="#ff9a0e"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_below="@id/rizztext2"
+        android:id="@+id/loginbutton"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg"
+        android:text="Login with google"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3d3b4a"
+    tools:context=".DetailsFragment">
+
+    <ImageView
+        android:id="@+id/imageDetails"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/layout_bg6"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/imageDetails"
+        android:id="@+id/titleDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:text="Title:"/>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/titleDetails"
+        android:id="@+id/nut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="Plot: "/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/titleDetails"
+        android:layout_toRightOf="@id/nut"
+        android:id="@+id/plotDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:text="Plot: "/>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/genresDetails"
+        android:layout_below="@id/plotDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="Genres: "/>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/runtimeDetails"
+        android:layout_below="@id/genresDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="Duration: "/>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/releaseDetails"
+        android:layout_below="@id/runtimeDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="Release At: "/>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/ratingDetails"
+        android:layout_below="@+id/releaseDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="IMDb Rating: "/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/rentStudio"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingDetails"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="-1dp"
+        android:background="@drawable/layout_bg7"
+        android:text="Rent Mini Studio" />
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompletedFragment"
+    android:background="#3d3b4a">
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Success"
+        android:textSize="20dp"
+        android:textColor="#4FBf26"
+        android:id="@+id/periksatext"/>
+
+    <LinearLayout
+        android:id="@+id/periksaline"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_below="@id/periksatext"
+        android:background="@color/black"
+        android:orientation="horizontal"/>
+
+    <TextView
+        android:layout_below="@id/periksaline"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Details"
+        android:textSize="20dp"
+        android:textColor="#ff9a0e"
+        android:id="@+id/itemDetailsText"/>
+
+    <LinearLayout
+        android:layout_marginLeft="50dp"
+        android:id="@+id/itemDetailsLine"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/itemDetailsText"
+        android:background="@color/black"
+        android:orientation="horizontal"/>
+
+    <RelativeLayout
+        android:id="@+id/itemDetailsContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemDetailsLine"
+        android:background="@drawable/layout_bg6">
+        <TextView
+            android:layout_marginTop="25dp"
+            android:id="@+id/invoiceText"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="invoice"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_below="@id/invoiceText"
+            android:id="@+id/itemNameText"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:textSize="18dp"
+            android:text="itemName"/>
+        <TextView
+            android:layout_below="@id/itemNameText"
+            android:id="@+id/itemDurationText"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:text="duration"/>
+        <TextView
+            android:layout_below="@id/itemDurationText"
+            android:id="@+id/paymentMethodText"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="paymentMethod"
+            android:layout_marginBottom="25dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@id/itemDetailsContainer"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ticket QR"
+        android:textSize="20dp"
+        android:textColor="#ff9a0e"
+        android:id="@+id/voucherCodeText"/>
+
+    <LinearLayout
+        android:layout_marginLeft="50dp"
+        android:id="@+id/voucherCodeLine"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/voucherCodeText"
+        android:background="@color/black"
+        android:orientation="horizontal"/>
+
+    <RelativeLayout
+        android:id="@+id/voucherCodeContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_width="350dp"
+        android:layout_height="230dp"
+        android:layout_below="@id/voucherCodeLine"
+        android:background="@drawable/layout_bg6">
+
+       <ImageView
+           android:id="@+id/qrimage"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="220dp"
+           android:scaleType="fitCenter"/>
+    </RelativeLayout>
+
+</RelativeLayout>
